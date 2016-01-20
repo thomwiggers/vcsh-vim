@@ -7,6 +7,9 @@ call vundle#begin()
 "Vundle manage vundle
 Plugin 'VundleVim/Vundle.vim'
 
+" Ansible
+Plugin 'pearofducks/ansible-vim'
+
 " Syntastic syntax checker
 Plugin 'scrooloose/syntastic'
 
@@ -33,7 +36,6 @@ call vundle#end()
 filetype plugin indent on
 
 " Own settings
-
 " ------------------
 "  Text formatting
 " ------------------
