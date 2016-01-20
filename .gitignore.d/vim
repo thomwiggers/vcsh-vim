@@ -11,4 +11,5 @@
 !/.vim/undo
 !/.vim/undo/.gitkeep
 !/.gitignore.d
+/.gitignore.d/*
 !/.gitignore.d/vim
