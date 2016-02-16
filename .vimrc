@@ -228,6 +228,7 @@ endfunction
 " -----------------------------------
 "  Python Mode
 " ----------------------------------
+let g:pymode_python = 'python3'
 let g:pymode_rope_lookup_project  = 1
 let g:pymode_rope_complete_on_dot = 0
 let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'pep527']
