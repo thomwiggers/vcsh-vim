@@ -129,10 +129,9 @@ set undofile			" Persistent undo
 set visualbell			" don't use audible bell
 set wildchar=<TAB>		" Use tab for cli expansion
 set wildignore+=*.jpg,*.png,*.gif,*.psd,*.o,*.obj,*.min,*.pyc,*.min.js,*.out,*.gz,*.gpg,*.tar.*
-set wildignore+=*/vendor/*,*/node_modules/*,*/.git/*,*/.svn/*,*/.sass-cache/*,*/log/*,,*/tmp/*,*/build/*
+set wildignore+=*/vendor/*,*/node_modules/*,*/.git/*,*/.svn/*,*/.sass-cache/*,*/log/*,*/tmp/*,*/build/*
 " Ignore these files
 set suffixes=.bak,~,.swo,.swp,.o,.d,.info,.aux,.log,.dvi,.pdf,.bbl,.bin,.blg,.brf,.cb,.dmg,.ind,.idx,.ilg,.inx,.out,.toc,.pyc,.pyo,.pyd,.dll
-
 
 " --------------------------------------
 
