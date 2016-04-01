@@ -37,6 +37,15 @@ Plugin 'mattn/webapi-vim'
 " Gist
 Plugin 'mattn/gist-vim'
 
+" Html5
+Plugin 'othree/html5.vim'
+
+" js
+Plugin 'othree/yajs.vim'
+
+"Editorconfig support
+Plugin 'editorconfig/editorconfig-vim'
+
 call vundle#end()
 
 filetype plugin indent on
