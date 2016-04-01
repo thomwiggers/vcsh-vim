@@ -178,10 +178,11 @@ autocmd BufReadPost *
 au BufRead,BufNewFile .zsh_rc,.functions,.commonrc set ft=zsh
 
 " LaTeX settings
+set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 let g:Tex_MultipleCompileFormats = 'pdf,dvi'
 let g:Tex_DefaultTargetFormat    = 'pdf' 
-let g:Tex_Diacritics = 1
+let g:Tex_Diacritics = 0
 
 " spellang
 set spelllang=en_gb
