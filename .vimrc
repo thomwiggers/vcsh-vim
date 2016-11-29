@@ -46,6 +46,15 @@ Plugin 'othree/yajs.vim'
 "Editorconfig support
 Plugin 'editorconfig/editorconfig-vim'
 
+" Camil's Clean plugin
+Plugin 'camilstaps/vim-clean'
+
+" Camil's BB-script highlighter
+Plugin 'camilstaps/vim-bb'
+
+" Fugitive for git
+Plugin 'tpope/vim-fugitive'
+
 call vundle#end()
 
 filetype plugin indent on
