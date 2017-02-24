@@ -64,18 +64,18 @@ filetype plugin indent on
 "  Text formatting
 " ------------------
 
-set autoindent   		"Autoindent newlines
-set autowrite			" autosave on :make
+set autoindent                  " Autoindent newlines
+set autowrite                   " autosave on :make
 set smartindent
 inoremap # X<BS>#
-set nowrap			" Don't wrap lines
+set nowrap                      " Don't wrap lines
 set softtabstop=4
 set shiftwidth=4
-set tabstop=4			" 4-space tab
+set tabstop=4                   " 4-space tab
 set expandtab
-set smarttab			" At start of line, tab inserts sw, <BS> deletes sw
-set formatoptions+=n		" Support for numbered/bullet lists
-set virtualedit=block 		" Allow virtual edit in block mode
+set smarttab                    " At start of line, tab inserts sw, <BS> deletes sw
+set formatoptions+=n            " Support for numbered/bullet lists
+set virtualedit=block           " Allow virtual edit in block mode
 
 " --------------------
 "  Remapping
@@ -104,52 +104,52 @@ inoremap <Up> <C-o>gk
 " ----------------------
 "  UI
 " ----------------------
-set ruler 			" Show cursor pos all the time
-set noshowcmd			" don't display incomplete commands
-set nolazyredraw		" don't do this
-set number			" Linenos
-set wildmenu			" turn on wild menu
+set ruler                       " Show cursor pos all the time
+set noshowcmd                   " don't display incomplete commands
+set nolazyredraw                " don't do this
+set number                      " Linenos
+set wildmenu                    " turn on wild menu
 set wildmode=list:longest,full
-set ch=1			" cli height
-set backspace=2			" allow backspacing over everything in insert mode
-set whichwrap+=<,>,h,l,[,] 	" backspace and cursor keys wrap to
-set shortmess=filtIoOa		" shorten messages
-set report=0			" tell us about changes
-set nostartofline		" don't jump to start of line when scrolling
-set esckeys			" allow cursor keys in insert mode
+set ch=1                        " cli height
+set backspace=2                 " allow backspacing over everything in insert mode
+set whichwrap+=<,>,h,l,[,]      " backspace and cursor keys wrap to
+set shortmess=filtIoOa          " shorten messages
+set report=0                    " tell us about changes
+set nostartofline               " don't jump to start of line when scrolling
+set esckeys                     " allow cursor keys in insert mode
 set foldenable
 set foldlevel=2
-" set foldlevelstart=2		" sets foldlevel when editing a new buffer
-set foldmethod=syntax		" markers are used to specify folds
-set foldminlines=0		" allow folding single lines
-set foldnestmax=3		" amx vold nesting
+" set foldlevelstart=2          " sets foldlevel when editing a new buffer
+set foldmethod=syntax           " markers are used to specify folds
+set foldminlines=0              " allow folding single lines
+set foldnestmax=3               " max vold nesting
 set formatoptions=
-set formatoptions+=c 		" format comments
-set formatoptions+=r		" continue comments by default
-set formatoptions+=o 		" make comments when using o or O from comment line
-set formatoptions+=q		" format comment with gp
-set formatoptions+=n		" recognize numbered lists
-set formatoptions+=2		" Use indent from second line of a paragraph
-set formatoptions+=l		" Don't break long lines that were already long
-set formatoptions+=1		" break before 1-letter words
-set history=1000		" long history
-set hlsearch			" highlight searches
-set ignorecase 			" Ignore case of search
-set incsearch			" search as pattern is typed
-set magic			" extended regexes
-set mouse=a			" enable mouse always
-set noerrorbells		" no bell
-set nojoinspaces		" only insert ingle space after a '.', '?' and '! with join cmd
-set title			" show title in window titlebar
-set ttyfast			" Fast tty: send more characters at a time
-set ttymouse=xterm		" Mouse type=xterm
-set undofile			" Persistent undo
-set visualbell			" don't use audible bell
-set wildchar=<TAB>		" Use tab for cli expansion
+set formatoptions+=c            " format comments
+set formatoptions+=r            " continue comments by default
+set formatoptions+=o            " make comments when using o or O from comment line
+set formatoptions+=q            " format comment with gp
+set formatoptions+=n            " recognize numbered lists
+set formatoptions+=2            " Use indent from second line of a paragraph
+set formatoptions+=l            " Don't break long lines that were already long
+set formatoptions+=1            " break before 1-letter words
+set history=1000                " long history
+set hlsearch                    " highlight searches
+set ignorecase                  " Ignore case of search
+set incsearch                   " search as pattern is typed
+set magic                       " extended regexes
+set mouse=a                     " enable mouse always
+set noerrorbells                " no bell
+set nojoinspaces                " only insert ingle space after a '.', '?' and '! with join cmd
+set title                       " show title in window titlebar
+set ttyfast                     " Fast tty: send more characters at a time
+set ttymouse=xterm              " Mouse type=xterm
+set undofile                    " Persistent undo
+set visualbell                  " don't use audible bell
+set wildchar=<TAB>              " Use tab for cli expansion
 set wildignore+=*.jpg,*.png,*.gif,*.psd,*.o,*.obj,*.min,*.pyc,*.min.js,*.out,*.gz,*.gpg,*.tar.*
 set wildignore+=*/vendor/*,*/node_modules/*,*/.git/*,*/.svn/*,*/.sass-cache/*,*/log/*,*/tmp/*,*/build/*
 " Ignore these files
-set suffixes=.bak,~,.swo,.swp,.o,.d,.info,.aux,.log,.dvi,.pdf,.bbl,.bin,.blg,.brf,.cb,.dmg,.ind,.idx,.ilg,.inx,.out,.toc,.pyc,.pyo,.pyd,.dll
+set suffixes=.bak,~,.swo,.swp,.o,.d,.info,.aux,.log,.dvi,.pdf,.bbl,.bin,.blg,.brf,.cb,.dmg,.ind,.idx,.ilg,.inx,.out,.toc,.pyc,.pyo,.pyd,.dll,.prj,.prp
 
 " --------------------------------------
 
@@ -191,7 +191,7 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 let g:Tex_MultipleCompileFormats = 'pdf,dvi'
 let g:Tex_DefaultTargetFormat    = 'pdf' 
-let g:Tex_CompileRule_pdf = 'latexmk -pdf -f $*'
+let g:Tex_CompileRule_pdf = 'latexmk -pdf -bibtex $*'
 let g:Tex_Diacritics = 0
 
 " spellang
@@ -207,9 +207,9 @@ let g:gist_detect_filetype=1
 "  Visual cues
 " ----------------------------------------
 
-set showmatch				" matching brackets
+set showmatch                           " matching brackets
 set mat=5
-set laststatus=2			" Always show the status line
+set laststatus=2                        " Always show the status line
 
 " ---------------------------------------
 "  Strip trailing whitespace
@@ -234,6 +234,20 @@ syntax enable
 set background=dark
 call togglebg#map("<F5>")
 colorscheme solarized
+
+let g:solarized_contrast="high"    "default value is normal
+" let g:solarized_termtrans=0
+" let g:solarized_degrade=0
+" let g:solarized_bold=1
+" let g:solarized_underline=1
+" let g:solarized_italic=1
+let g:solarized_termcolors=256
+" let g:solarized_visibility="normal"
+" let g:solarized_diffmode="normal"
+" let g:solarized_hitrail=0
+" let g:solarized_menu=1
+
+
 
 " -----------------------------------
 " pastebin
