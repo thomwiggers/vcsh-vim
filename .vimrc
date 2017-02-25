@@ -267,6 +267,7 @@ function! AppendModeline()
   let l:modeline = substitute(&commentstring, "%s", l:modeline, "")
   call append(line("$"), l:modeline)
 endfunction
+nnoremap <silent> <Leader>ml :call AppendModeline()<CR>
 
 " -----------------------------------
 "  Python Mode
