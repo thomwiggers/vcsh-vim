@@ -142,7 +142,6 @@ set noerrorbells                " no bell
 set nojoinspaces                " only insert ingle space after a '.', '?' and '! with join cmd
 set title                       " show title in window titlebar
 set ttyfast                     " Fast tty: send more characters at a time
-set ttymouse=xterm              " Mouse type=xterm
 set undofile                    " Persistent undo
 set visualbell                  " don't use audible bell
 set wildchar=<TAB>              " Use tab for cli expansion
@@ -150,6 +149,11 @@ set wildignore+=*.jpg,*.png,*.gif,*.psd,*.o,*.obj,*.min,*.pyc,*.min.js,*.out,*.g
 set wildignore+=*/vendor/*,*/node_modules/*,*/.git/*,*/.svn/*,*/.sass-cache/*,*/log/*,*/tmp/*,*/build/*
 " Ignore these files
 set suffixes=.bak,~,.swo,.swp,.o,.d,.info,.aux,.log,.dvi,.pdf,.bbl,.bin,.blg,.brf,.cb,.dmg,.ind,.idx,.ilg,.inx,.out,.toc,.pyc,.pyo,.pyd,.dll,.prj,.prp
+
+" Vim-only
+if !has('nvim')
+    set ttymouse=xterm          " Mouse type=xterm
+endif
 
 " --------------------------------------
 
